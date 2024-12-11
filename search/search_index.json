@@ -1,1 +1,1 @@
-{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Witaj w Dokumentacji","text":"<p>To jest cos fajnego!</p>"}]}
+{"config":{"indexing":"full","lang":["en"],"min_search_length":3,"prebuild_index":false,"separator":"[\\s\\-]+"},"docs":[{"location":"","text":"Witaj w Dokumentacji To jest cos fajnego!","title":"Witaj w Dokumentacji"},{"location":"#witaj-w-dokumentacji","text":"To jest cos fajnego!","title":"Witaj w Dokumentacji"}]}
