@@ -17,11 +17,11 @@ table_of_contents = [
 # Tworzenie plików z numerami porządkowymi
 for i, topic in enumerate(table_of_contents, start=1):
     # Zamiana spacji na podkreślenia w nazwach plików
-    filename = f"{i} {topic.replace(' ', '_')}.md"
+    filename = f"_{i:02d} {topic.replace(' ', '_')}.md"
     
     # Tworzenie pliku
-    with open(filename, "w") as file:
-        file.write(f"# {topic}\n\n")  # Dodanie tytułu w pliku
+    with open('docs/3 Discret_Mathematics/'+filename, "w") as file:
+        file.write(f"# {i:02d} {topic}\n\n")  # Dodanie tytułu w pliku
     print(f"Stworzono plik: {filename}")
 
 print("Wszystkie pliki zostały utworzone!")
