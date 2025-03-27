@@ -1,4 +1,5 @@
 site_name: Physics and Mathematics
+
 theme:
   name: readthedocs
   highlightjs: true
@@ -6,11 +7,13 @@ theme:
     - yaml
     - rust
     - python
+
 markdown_extensions:
   - toc
   - tables
   - pymdownx.arithmatex:
       generic: true
+
 plugins:
   - search
   - mermaid2
@@ -19,4 +22,24 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
 
-    
+nav:
+  - Home: index.md
+  - Physics:
+      - Mechanics:
+          - Problem 1: 1 Physics/1 Mechanics/Problem_1.md
+          - Problem 2: 1 Physics/1 Mechanics/Problem_2.md
+      - Gravity:
+          - Problem 1: 1 Physics/2 Gravity/Problem_1.md
+          - Problem 2: 1 Physics/2 Gravity/Problem_2.md
+          - Problem 3: 1 Physics/2 Gravity/Problem_3.md
+      - Waves:
+          - Problem 1: 1 Physics/3 Waves/Problem_1.md
+      - Electromagnetism:
+          - Problem 1: 1 Physics/4 Electromagnetism/Problem_1.md
+      - Circuits:
+          - Problem 1: 1 Physics/5 Circuits/Problem_1.md
+      - Statistics:
+          - Problem 1: 1 Physics/6 Statistics/Problem_1.md
+          - Problem 2: 1 Physics/6 Statistics/Problem_2.md
+      - Measurements:
+          - Problem 1: 1 Physics/7 Measurements/Problem_1.md
