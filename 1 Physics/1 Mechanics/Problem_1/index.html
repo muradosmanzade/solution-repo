@@ -39,22 +39,50 @@
 </div>
 <div aria-label="Navigation menu" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../..">Introduction</a>
+<li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">1 Physics</span></p>
+<p class="caption"><span class="caption-text">Physics</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal current">1 Mechanics</a>
+<li class="toctree-l1 current"><a class="reference internal current">Mechanics</a>
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#1-theoretical-basis">1. Theoretical Basis</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#governing-equations-of-motion">Governing Equations of Motion</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#time-of-flight-and-range">Time of Flight and Range</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-analysis-of-the-range">2. Analysis of the Range</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#impact-of-initial-conditions">Impact of Initial Conditions</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#graphical-representation">Graphical Representation</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#3-real-world-applications">3. Real-World Applications</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#4-implementation">4. Implementation</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#example-accounting-for-air-resistance">Example: Accounting for Air Resistance</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#5-limitations-and-further-considerations">5. Limitations and Further Considerations</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#conclusion">Conclusion</a>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Problem_2/">Problem 2</a>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal">2 Gravity</a>
+<li class="toctree-l1"><a class="reference internal">Gravity</a>
 <ul>
 <li class="toctree-l2"><a class="reference internal" href="../../2%20Gravity/Problem_1/">Problem 1</a>
 </li>
@@ -64,25 +92,25 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal">3 Waves</a>
+<li class="toctree-l1"><a class="reference internal">Waves</a>
 <ul>
 <li class="toctree-l2"><a class="reference internal" href="../../3%20Waves/Problem_1/">Problem 1</a>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal">4 Electromagnetism</a>
+<li class="toctree-l1"><a class="reference internal">Electromagnetism</a>
 <ul>
 <li class="toctree-l2"><a class="reference internal" href="../../4%20Electromagnetism/Problem_1/">Problem 1</a>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal">5 Circuits</a>
+<li class="toctree-l1"><a class="reference internal">Circuits</a>
 <ul>
 <li class="toctree-l2"><a class="reference internal" href="../../5%20Circuits/Problem_1/">Problem 1</a>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal">6 Statistics</a>
+<li class="toctree-l1"><a class="reference internal">Statistics</a>
 <ul>
 <li class="toctree-l2"><a class="reference internal" href="../../6%20Statistics/Problem_1/">Problem 1</a>
 </li>
@@ -90,61 +118,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal">7 Measurements</a>
+<li class="toctree-l1"><a class="reference internal">Measurements</a>
 <ul>
 <li class="toctree-l2"><a class="reference internal" href="../../7%20Measurements/Problem_1/">Problem 1</a>
-</li>
-</ul>
-</li>
-</ul>
-<p class="caption"><span class="caption-text">2 Mathematics</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../2%20Mathematics/1%20Linear_algebra/">Linear Algebra</a>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../../2%20Mathematics/2%20Analytic_geometry/">Analytic geometry</a>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../../2%20Mathematics/3%20Calculus/">Calculus</a>
-</li>
-</ul>
-<p class="caption"><span class="caption-text">3 Discret Mathematics</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal">1 Set Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_02%20Set_Theory/">Set Theory</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_03%20Relations/">Relations</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/1%20Set%20Theory%20and%20.../_04%20Functions/">Functions</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">2 Number Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/2%20Number%20Theory%20and%20.../_05%20Combinatorics/">Combinatorics</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/2%20Number%20Theory%20and%20.../_08%20Number_Theory/">Number Theory</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">3 Recurrence and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_06%20Sequences_and_Series/">Sequences and Series</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_07%20Induction/">Induction</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/3%20Recurrence%20and%20.../_09%20Recurrence/">Recurrence</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">4 Graph Theory and ...</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/4%20Graph%20Theory%20and%20.../_10%20Graph_Theory/">Graph Theory</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal">5 Logic</a>
-<ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../3%20Discret_Mathematics/5%20Logic/_01%20Logic/">Logic</a>
 </li>
 </ul>
 </li>
@@ -161,8 +137,8 @@
 <div class="rst-content"><div aria-label="breadcrumbs navigation" role="navigation">
 <ul class="wy-breadcrumbs">
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
-<li class="breadcrumb-item">1 Physics</li>
-<li class="breadcrumb-item">1 Mechanics</li>
+<li class="breadcrumb-item">Physics</li>
+<li class="breadcrumb-item">Mechanics</li>
 <li class="breadcrumb-item active">Problem 1</li>
 <li class="wy-breadcrumbs-aside">
 </li>
@@ -172,10 +148,118 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<p>Examination of the Range as a Function of the Launch Angle</p>
+<h2 id="1-theoretical-basis">1. Theoretical Basis</h2>
+<h3 id="governing-equations-of-motion">Governing Equations of Motion</h3>
+<p>We begin by analyzing the motion of a projectile fired with an initial velocity <span class="arithmatex">\(v_0\)</span> at an angle <span class="arithmatex">\(\theta\)</span> relative to the horizontal. Assuming there is no air resistance and gravity <span class="arithmatex">\(g\)</span> acts downward, we can separate the motion into horizontal and vertical components.</p>
+<h4 id="motion-equations">Motion Equations:</h4>
+<ul>
+<li>
+<p>Horizontal motion:
+  $$
+  x(t) = v_0 \cos(\theta) t
+  $$</p>
+</li>
+<li>
+<p>Vertical motion:
+  $$
+  y(t) = v_0 \sin(\theta) t - \frac{1}{2} g t^2
+  $$</p>
+</li>
+</ul>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(x(t)\)</span> and <span class="arithmatex">\(y(t)\)</span> represent the horizontal and vertical positions at time <span class="arithmatex">\(t\)</span>, respectively.</li>
+<li><span class="arithmatex">\(v_0\)</span> is the initial velocity,</li>
+<li><span class="arithmatex">\(\theta\)</span> is the launch angle,</li>
+<li><span class="arithmatex">\(g\)</span> is the acceleration due to gravity.</li>
+</ul>
+<h3 id="time-of-flight-and-range">Time of Flight and Range</h3>
+<p>To determine the total time of flight, we set <span class="arithmatex">\(y(t) = 0\)</span> and solve for <span class="arithmatex">\(t\)</span>:</p>
+<div class="arithmatex">\[
+0 = v_0 \sin(\theta) t - \frac{1}{2} g t^2
+\]</div>
+<p>Solving for <span class="arithmatex">\(t\)</span>, we get two roots: <span class="arithmatex">\(t = 0\)</span> (the initial launch time) and <span class="arithmatex">\(t = \frac{2 v_0 \sin(\theta)}{g}\)</span>. The latter represents the total time of flight, <span class="arithmatex">\(t_f\)</span>:</p>
+<div class="arithmatex">\[
+t_f = \frac{2 v_0 \sin(\theta)}{g}
+\]</div>
+<p>The horizontal range <span class="arithmatex">\(R\)</span> corresponds to the horizontal distance covered during this time, so we substitute <span class="arithmatex">\(t_f\)</span> into the equation for <span class="arithmatex">\(x(t)\)</span>:</p>
+<div class="arithmatex">\[
+R = v_0 \cos(\theta) t_f = v_0 \cos(\theta) \frac{2 v_0 \sin(\theta)}{g}
+\]</div>
+<p>Using the trigonometric identity <span class="arithmatex">\(\sin(2\theta) = 2 \sin(\theta) \cos(\theta)\)</span>, we arrive at the range formula:</p>
+<div class="arithmatex">\[
+R = \frac{v_0^2 \sin(2\theta)}{g}
+\]</div>
+<p>This expression reveals that the range is maximized when <span class="arithmatex">\(\sin(2\theta) = 1\)</span>, which occurs when <span class="arithmatex">\(2\theta = 90^\circ\)</span>, or <span class="arithmatex">\(\theta = 45^\circ\)</span>.</p>
+<hr/>
+<h2 id="2-analysis-of-the-range">2. Analysis of the Range</h2>
+<h3 id="impact-of-initial-conditions">Impact of Initial Conditions</h3>
+<ul>
+<li><strong>Initial velocity (<span class="arithmatex">\(v_0\)</span>)</strong>: The range is directly proportional to the square of the initial velocity. Increasing <span class="arithmatex">\(v_0\)</span> significantly enhances the range.</li>
+<li><strong>Gravitational acceleration (<span class="arithmatex">\(g\)</span>)</strong>: The range is inversely proportional to the gravitational acceleration. A higher value of <span class="arithmatex">\(g\)</span> leads to a decrease in the range.</li>
+<li><strong>Launch angle (<span class="arithmatex">\(\theta\)</span>)</strong>: The range reaches its maximum at <span class="arithmatex">\(\theta = 45^\circ\)</span>, and the relationship is symmetric around this angle.</li>
+</ul>
+<h3 id="graphical-representation">Graphical Representation</h3>
+<p>The following Python script demonstrates how the range varies with <span class="arithmatex">\(\theta\)</span>:</p>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+
+def range_function(theta, v0, g=9.81):
+    return (v0**2 * np.sin(2 * np.radians(theta))) / g
+
+# Parameters
+v0 = 25  # initial velocity in m/s
+theta = np.linspace(0, 90, 100)  # range of angles in degrees
+g = 9.81  # gravity in m/s^2
+
+# Compute ranges
+ranges = range_function(theta, v0, g)
+
+# Plot results
+plt.figure(figsize=(8, 5))
+plt.plot(theta, ranges, label=f'v0 = {v0} m/s')
+plt.xlabel('Launch Angle (degrees)')
+plt.ylabel('Range (m)')
+plt.title('Projectile Range vs. Launch Angle')
+plt.legend()
+plt.grid(True)
+plt.show()
+</code></pre>
+<p><img alt="Projectile Range vs. Launch Angle" src="../graphics/problem1.PNG"/></p>
+<hr/>
+<h2 id="3-real-world-applications">3. Real-World Applications</h2>
+<ul>
+<li><strong>Athletics</strong>: The principles of projectile motion are valuable in optimizing release angles for sports such as archery, shot put, and football.</li>
+<li><strong>Technical Design</strong>: These principles are applied in weaponry, defense technologies, and the design of flight trajectories for spacecraft and guided projectiles.</li>
+<li><strong>Cosmic Studies</strong>: Projectile motion concepts are used to model the paths of celestial bodies and for planning interplanetary missions.</li>
+</ul>
+<h2 id="4-implementation">4. Implementation</h2>
+<p>A computational simulation can offer a deeper understanding of situations that involve air resistance. To include drag force, it is necessary to apply numerical solution methods (e.g., Runge-Kutta) for solving the corresponding differential equations.</p>
+<h3 id="example-accounting-for-air-resistance">Example: Accounting for Air Resistance</h3>
+<p>The dynamic equations that account for drag <span class="arithmatex">\(F_d = -k v^2\)</span> are:</p>
+<div class="arithmatex">\[
+m \frac{d^2 x}{dt^2} = -k v_x^2
+\]</div>
+<div class="arithmatex">\[
+m \frac{d^2 y}{dt^2} = -mg - k v_y^2
+\]</div>
+<p>A numerical computation tool, like Python's SciPy library, can be employed to solve these equations.</p>
+<hr/>
+<h2 id="5-limitations-and-further-considerations">5. Limitations and Further Considerations</h2>
+<ul>
+<li><strong>Atmospheric drag</strong>: Leads to asymmetry in the trajectory and reduces the projectile's range.</li>
+<li><strong>Irregular terrain</strong>: Requires solutions for more complex boundary conditions.</li>
+<li><strong>Wind effects</strong>: Influences the trajectory in unpredictable ways.</li>
+</ul>
+<p>Future research may explore the use of machine learning techniques to predict projectile paths in more complicated environments.</p>
+<hr/>
+<h2 id="conclusion">Conclusion</h2>
+<p>The study of projectile motion provides valuable mathematical and physical insights. Although the simplified model is a good approximation, real-world applications require numerical methods to handle non-ideal conditions.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
-<a class="btn btn-neutral float-left" href="../../.." title="Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+<a class="btn btn-neutral float-left" href="../../.." title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
 <a class="btn btn-neutral float-right" href="../Problem_2/" title="Problem 2">Next <span class="icon icon-circle-arrow-right"></span></a>
 </div>
 <hr/>
