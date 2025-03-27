@@ -7,6 +7,7 @@ Exploring the Dynamics of a Forced Damped Rotational System
 ### Governing Equation
 The motion of a forced damped rotational system is described by the nonlinear differential equation:
 
+
 $$
 I \frac{d^2\alpha}{dt^2} + c \frac{d\alpha}{dt} + k \sin\alpha = T_0 \cos(\Omega t)
 $$
