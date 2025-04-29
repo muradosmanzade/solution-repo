@@ -88,17 +88,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#2-implementation-and-analysis">2. Implementation and Analysis</a>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#2-implementation-and-analysis_1">2. Implementation and Analysis</a>
-<ul>
-<li class="toctree-l4"><a class="reference internal" href="#21-uniform-distribution-analysis">2.1 Uniform Distribution Analysis</a>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#22-exponential-distribution-analysis">2.2 Exponential Distribution Analysis</a>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#23-binomial-distribution-analysis">2.3 Binomial Distribution Analysis</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#3-convergence-analysis">3. Convergence Analysis</a>
+<li class="toctree-l3"><a class="reference internal" href="#3-implementation-and-analysis">3. Implementation and Analysis</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#4-standard-error-analysis">4. Standard Error Analysis</a>
 </li>
@@ -158,10 +148,9 @@
 <h2 id="2-implementation-and-analysis">2. Implementation and Analysis</h2>
 <p>We will investigate this behavior through Python-based simulations, utilizing various probability distributions:</p>
 <div class="arithmatex">\[ \bar{X}_n \sim N\left(\mu, \frac{\sigma^2}{n}\right) \]</div>
-<p>where <span class="arithmatex">\( \bar{X}_n \)</span> represents the distribution of the sample mean.</p>
 <p>The standardized version of the sampling distribution is:</p>
 <div class="arithmatex">\[ \frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}} \sim N(0,1) \]</div>
-<h2 id="2-implementation-and-analysis_1">2. Implementation and Analysis</h2>
+<h2 id="3-implementation-and-analysis">3. Implementation and Analysis</h2>
 <p>We will examine this behavior through Python-based simulations using various probability distributions:</p>
 <pre><code class="language-python">import numpy as np
 import matplotlib.pyplot as plt
@@ -223,60 +212,6 @@ fig1 = plot_sampling_distribution(uniform_pop, [5, 10, 30, 50],
 plt.show()
 </code></pre>
 <p><img alt="Uniform Distribution" src="../images/problem%201.2.0.PNG"/></p>
-<h3 id="21-uniform-distribution-analysis">2.1 Uniform Distribution Analysis</h3>
-<p>The uniform distribution has a theoretical mean of:
-$$ \mu = \frac{a + b}{2} $$
-and variance:
-$$ \sigma^2 = \frac{(b-a)^2}{12} $$</p>
-<p>For our case (0,10):
-- μ = 5
-- σ² ≈ 8.33</p>
-<pre><code class="language-python"># 2. Exponential Distribution
-exponential_pop = np.random.exponential(2, 10000)
-fig2 = plot_sampling_distribution(exponential_pop, [5, 10, 30, 50], 
-                                title="Exponential Distribution (λ=0.5)")
-plt.show()
-</code></pre>
-<p>![Exponential Distribution (λ=0.5)</p>
-<h3 id="22-exponential-distribution-analysis">2.2 Exponential Distribution Analysis</h3>
-<p>For exponential distribution with rate parameter λ:
-$$ \mu = \frac{1}{\lambda} $$
-$$ \sigma^2 = \frac{1}{\lambda^2} $$</p>
-<pre><code class="language-python"># 3. Binomial Distribution
-binomial_pop = np.random.binomial(20, 0.3, 10000)
-fig3 = plot_sampling_distribution(binomial_pop, [5, 10, 30, 50], 
-                                title="Binomial Distribution (n=20, p=0.3)")
-plt.show()
-</code></pre>
-<p><img alt="Binomial Distribution (n=20, p=0.3)" src="../images/problem%201.2.1.PNG"/></p>
-<h3 id="23-binomial-distribution-analysis">2.3 Binomial Distribution Analysis</h3>
-<p>For binomial distribution with parameters n and p:
-$$ \mu = np $$
-$$ \sigma^2 = np(1-p) $$</p>
-<h2 id="3-convergence-analysis">3. Convergence Analysis</h2>
-<p>Let's analyze the rate of convergence using Q-Q plots:</p>
-<pre><code class="language-python">def plot_qq_analysis(population, sample_sizes, n_samples=1000):
-    fig, axes = plt.subplots(2, 2, figsize=(15, 12))
-    fig.suptitle('Q-Q Plots for Different Sample Sizes', fontsize=16)
-
-    for i, n in enumerate(sample_sizes):
-        row = i // 2
-        col = i % 2
-
-        sample_means = [np.mean(np.random.choice(population, size=n)) 
-                       for _ in range(n_samples)]
-
-        stats.probplot(sample_means, dist="norm", plot=axes[row, col])
-        axes[row, col].set_title(f'Sample Size = {n}')
-
-    plt.tight_layout()
-    return fig
-
-# Analyze convergence for exponential distribution
-fig4 = plot_qq_analysis(exponential_pop, [5, 10, 30, 50])
-plt.show()
-</code></pre>
-<p><img alt="Q-Q Plots for Different Sample Sizes" src="../images/problem%201.2.3.PNG"/></p>
 <h2 id="4-standard-error-analysis">4. Standard Error Analysis</h2>
 <p>The CLT predicts that the standard error (SE) of the sampling distribution decreases with the square root of the sample size:</p>
 <div class="arithmatex">\[ SE = \frac{\sigma}{\sqrt{n}} \]</div>
