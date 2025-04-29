@@ -14,14 +14,13 @@ We will investigate this behavior through Python-based simulations, utilizing va
 
 $$ \bar{X}_n \sim N\left(\mu, \frac{\sigma^2}{n}\right) $$
 
-where \( \bar{X}_n \) represents the distribution of the sample mean.
 
 The standardized version of the sampling distribution is:
 
 $$ \frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}} \sim N(0,1) $$
 
 
-## 2. Implementation and Analysis
+## 3. Implementation and Analysis
 
 We will examine this behavior through Python-based simulations using various probability distributions:
 
@@ -88,77 +87,6 @@ plt.show()
 
 ![Uniform Distribution](images/problem%201.2.0.PNG  )
 
-### 2.1 Uniform Distribution Analysis
-
-The uniform distribution has a theoretical mean of:
-$$ \mu = \frac{a + b}{2} $$
-and variance:
-$$ \sigma^2 = \frac{(b-a)^2}{12} $$
-
-For our case (0,10):
-- μ = 5
-- σ² ≈ 8.33
-
-```python
-# 2. Exponential Distribution
-exponential_pop = np.random.exponential(2, 10000)
-fig2 = plot_sampling_distribution(exponential_pop, [5, 10, 30, 50], 
-                                title="Exponential Distribution (λ=0.5)")
-plt.show()
-```
-
-![Exponential Distribution (λ=0.5)
-
-### 2.2 Exponential Distribution Analysis
-
-For exponential distribution with rate parameter λ:
-$$ \mu = \frac{1}{\lambda} $$
-$$ \sigma^2 = \frac{1}{\lambda^2} $$
-
-```python
-# 3. Binomial Distribution
-binomial_pop = np.random.binomial(20, 0.3, 10000)
-fig3 = plot_sampling_distribution(binomial_pop, [5, 10, 30, 50], 
-                                title="Binomial Distribution (n=20, p=0.3)")
-plt.show()
-```
-
-![Binomial Distribution (n=20, p=0.3)](images/problem%201.2.1.PNG   )
-
-### 2.3 Binomial Distribution Analysis
-
-For binomial distribution with parameters n and p:
-$$ \mu = np $$
-$$ \sigma^2 = np(1-p) $$
-
-## 3. Convergence Analysis
-
-Let's analyze the rate of convergence using Q-Q plots:
-
-```python
-def plot_qq_analysis(population, sample_sizes, n_samples=1000):
-    fig, axes = plt.subplots(2, 2, figsize=(15, 12))
-    fig.suptitle('Q-Q Plots for Different Sample Sizes', fontsize=16)
-    
-    for i, n in enumerate(sample_sizes):
-        row = i // 2
-        col = i % 2
-        
-        sample_means = [np.mean(np.random.choice(population, size=n)) 
-                       for _ in range(n_samples)]
-        
-        stats.probplot(sample_means, dist="norm", plot=axes[row, col])
-        axes[row, col].set_title(f'Sample Size = {n}')
-    
-    plt.tight_layout()
-    return fig
-
-# Analyze convergence for exponential distribution
-fig4 = plot_qq_analysis(exponential_pop, [5, 10, 30, 50])
-plt.show()
-```
-
-![Q-Q Plots for Different Sample Sizes](images/problem%201.2.3.PNG  )
 
 ## 4. Standard Error Analysis
 
