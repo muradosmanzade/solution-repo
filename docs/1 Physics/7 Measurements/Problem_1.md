@@ -136,10 +136,6 @@ plt.grid(True)
 plt.show()
 ```
 
-![Relative Contributions to Uncertainty in g](assets/prob1_a1.png)
-
-![Dependence of g on L and T](assets/prob1_a2.png)
-
 
 ### 2.3 Data Summary
 
@@ -155,7 +151,7 @@ plt.show()
 
 The standard gravitational acceleration at sea level is about 9.81 m/s². Based on our experiment, we obtained:
 
-\( g = (9.807 \pm 0.008) \, \text{m/s}^2 \)
+
 
 To assess the precision of our result, we calculate the relative uncertainty:
 
@@ -181,8 +177,7 @@ $$ \frac{\Delta g}{g} \times 100\% = 0.08\% $$
 
 ## 4. Conclusions
 
-The experimentally determined gravitational acceleration,  
-\( g = (9.807 \pm 0.008) \, \text{m/s}^2 \), is in excellent agreement with the standard accepted value of \( 9.81 \, \text{m/s}^2 \), and lies comfortably within the range of experimental uncertainty.
+
 
 The dominant contributors to overall uncertainty were:
 
